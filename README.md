@@ -4,6 +4,7 @@ This Demo uses [GameScoreKeeper Sockets Api](https://docs.gamescorekeeper.com/#l
 
 | ![list](media/general_dark.gif) | ![list](media/pick_date.gif) |
 |--|--|
+| ![list](media/sockets_example.gif) | ![list](media/sockets_example_2.gif) |
 
 
 ## Libs
