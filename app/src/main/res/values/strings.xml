@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Lol Results</string>
+    <string name="fixture_score">%d - %d</string>
+    <string name="fixture_format">Best of %d</string>
+    <string name="fixtures">Fixtures</string>
+    <string name="game_started">Welcome to Summoner\'s Rift</string>
+    <string name="turret_destroyed">%s has destroyed a turret</string>
+    <string name="inhibitor_destroyed">%s has destroyed an inhibitor</string>
+    <string name="ocean_drake_slain">%s has slain The Ocean Dragon.</string>
+    <string name="mountain_drake_slain">%s has slain The Mountain Dragon.</string>
+    <string name="infernal_drake_slain">%s has slain The Infernal Dragon.</string>
+    <string name="cloud_drake_slain">%s has slain The Cloud Dragon.</string>
+    <string name="elder_drake_slain">%s has slain The Elder Dragon.</string>
+    <string name="baron_slain">%s has slain The Baron Nashor.</string>
+    <string name="herald_slain">%s has slain The Rift Herald.</string>
+    <string name="slain_res">%1$s has slain %2$s.</string>
+    <string name="team_has_won">%s has won!!</string>
+    <string name="no_results">No results</string>
+</resources>

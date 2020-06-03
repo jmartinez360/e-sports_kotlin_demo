@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="24dp"
+    android:paddingBottom="28dp"
+    android:paddingRight="8dp"
+    android:paddingLeft="8dp"
+    >
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".35"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".65"/>
+
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/competition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:textSize="18sp"
+            android:textColor="@color/def_text_color"
+            android:gravity="center"
+            tools:text="Nombre de competición"
+            />
+
+        <TextView
+            android:id="@+id/matchDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="@color/def_text_color"
+            android:gravity="center"
+            tools:text="24/10/19 22:30"
+            />
+
+    </LinearLayout>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/leftTeamShield"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/leftGuideLine"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:placeholderImage="@drawable/default_team_icon"
+        tools:background="@color/yellow"
+        />
+
+    <TextView
+        android:id="@+id/leftTeamName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="18sp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/def_text_color"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/leftTeamShield"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/leftGuideLine"
+        tools:text="Equipo 1 regional"
+        />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/rightTeamShield"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        app:placeholderImage="@drawable/default_team_icon"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/rightGuideLine"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        tools:background="@color/light_green"
+        />
+
+    <TextView
+        android:id="@+id/rightTeamName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="18sp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/def_text_color"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/rightTeamShield"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/rightGuideLine"
+        tools:text="Equipo 2 "
+        />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/def_text_color"
+        android:textSize="26sp"
+        android:gravity="center"
+        app:layout_constraintLeft_toRightOf="@id/leftGuideLine"
+        app:layout_constraintRight_toLeftOf="@id/rightGuideLine"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintBottom_toTopOf="@id/matchFormat"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="0 - 1"
+        />
+
+    <TextView
+        android:id="@+id/matchFormat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:textColor="@color/def_text_color"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        app:layout_constraintLeft_toRightOf="@id/leftGuideLine"
+        app:layout_constraintRight_toLeftOf="@id/rightGuideLine"
+        app:layout_constraintTop_toBottomOf="@id/result"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="Best of 1"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
