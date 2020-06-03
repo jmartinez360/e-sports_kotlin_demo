@@ -1,4 +1,4 @@
-# League of Legends Match Events
+# League of Legends WebSockets Match Events
 Demo App that shows League of Legends  match real time events.
 This Demo uses [GameScoreKeeper Sockets Api]([https://gamescorekeeper.com/](https://gamescorekeeper.com/))  for getting all live data.
 
