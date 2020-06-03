@@ -13,7 +13,7 @@ This Demo uses [GameScoreKeeper Sockets Api](https://docs.gamescorekeeper.com/#l
 - [Retrofit with coroutines adapter:](https://github.com/square/retrofit) Networking managment
 - [Scarlet](https://github.com/Tinder/Scarlet) WebSockets managment
 
-This project is based in [Android Jetpack](https://developer.android.com/jetpack?hl=es-419) using MVVM patterns, LiveData and ViewModel
+This project is based in [Android Jetpack](https://developer.android.com/jetpack?hl=es-419) using MVVM patterns, LiveData, ViewModel and Clean Code
 
 It also supports Android Dark and Light mode using MaterialComponents
 
